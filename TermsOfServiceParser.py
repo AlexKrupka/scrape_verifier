@@ -4,7 +4,24 @@ from selenium.webdriver.firefox.options import Options
 
 def check_terms_of_service(url):
 
-    prohibited_terms = ["data mining", "robots", "data gathering", "extraction tools", "commercial purpose"]
+    prohibited_terms = [
+    "scraping",
+    "automated access",
+    "data mining",
+    "crawling",
+    "harvesting",
+    "data collection",
+    "data gathering",
+    "unauthorized use",
+    "unauthorized access",
+    "intellectual property",
+    "API use",
+    "robots",
+    "bandwidth usage",
+    "extraction tools",
+    "commercial purpose"
+    ]
+
     options = Options()
     options.headless = True
 
